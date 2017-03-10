@@ -205,6 +205,7 @@ public class GUI extends javax.swing.JFrame {
             tablero.tablero[0][0]=30;          
         }
         contador++;
+        tablero.calcular();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -215,7 +216,8 @@ public class GUI extends javax.swing.JFrame {
             jButton2.setText("0");
             tablero.tablero[1][0]=30;               
         }
-        contador++;        // TODO add your handling code here:
+        contador++;
+        tablero.calcular();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -226,7 +228,8 @@ public class GUI extends javax.swing.JFrame {
             jButton3.setText("0");
             tablero.tablero[2][0]=30;               
         }
-        contador++;        // TODO add your handling code here:
+        contador++; 
+        tablero.calcular();       // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -237,7 +240,8 @@ public class GUI extends javax.swing.JFrame {
             jButton4.setText("0"); 
             tablero.tablero[0][1]=30;              
         }
-        contador++;        // TODO add your handling code here:
+        contador++;
+        tablero.calcular();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -248,7 +252,8 @@ public class GUI extends javax.swing.JFrame {
             jButton5.setText("0"); 
             tablero.tablero[1][1]=30;            
         }
-        contador++;        // TODO add your handling code here:
+        contador++; 
+        tablero.calcular();       // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -259,7 +264,8 @@ public class GUI extends javax.swing.JFrame {
             jButton6.setText("0");  
             tablero.tablero[2][1]=30;             
         }
-        contador++;        // TODO add your handling code here:
+        contador++;   
+        tablero.calcular();     // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -270,7 +276,8 @@ public class GUI extends javax.swing.JFrame {
             jButton7.setText("0"); 
             tablero.tablero[0][2]=30;              
         }
-        contador++;        // TODO add your handling code here:
+        contador++;   
+        tablero.calcular();     // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -281,7 +288,8 @@ public class GUI extends javax.swing.JFrame {
             jButton8.setText("0");  
             tablero.tablero[1][2]=30;             
         }
-        contador++;        // TODO add your handling code here:
+        contador++;   
+        tablero.calcular();     // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -292,7 +300,8 @@ public class GUI extends javax.swing.JFrame {
             jButton9.setText("0");    
             tablero.tablero[2][2]=30;           
         }
-        contador++;        // TODO add your handling code here:
+        contador++;  
+        tablero.calcular();      // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
