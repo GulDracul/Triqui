@@ -77,12 +77,32 @@ public class GUI extends javax.swing.JFrame {
         });
 
         jButton7.setText("     ");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setText("     ");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton9.setText("     ");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton10.setText("Reiniciar Juego");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Jugador1");
 
@@ -179,8 +199,10 @@ public class GUI extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (contador%2==0){
             jButton1.setText("X");
+            tablero.tablero[0][0]=5;
         }else{
-            jButton1.setText("0");            
+            jButton1.setText("0");  
+            tablero.tablero[0][0]=30;          
         }
         contador++;
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -188,8 +210,10 @@ public class GUI extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (contador%2==0){
             jButton2.setText("X");
+            tablero.tablero[0][0]=5;
         }else{
-            jButton2.setText("0");            
+            jButton2.setText("0");
+            tablero.tablero[0][0]=30;               
         }
         contador++;        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -197,8 +221,10 @@ public class GUI extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         if (contador%2==0){
             jButton3.setText("X");
+            tablero.tablero[0][0]=5;
         }else{
-            jButton3.setText("0");            
+            jButton3.setText("0");
+            tablero.tablero[0][0]=30;               
         }
         contador++;        // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -206,8 +232,10 @@ public class GUI extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         if (contador%2==0){
             jButton4.setText("X");
+            tablero.tablero[0][0]=5;
         }else{
-            jButton4.setText("0");            
+            jButton4.setText("0"); 
+            tablero.tablero[0][0]=30;              
         }
         contador++;        // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -215,6 +243,8 @@ public class GUI extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         if (contador%2==0){
             jButton5.setText("X");
+            tablero.tablero[0][0]=5;
+            tablero.tablero[0][0]=30;   
         }else{
             jButton5.setText("0");            
         }
@@ -224,11 +254,59 @@ public class GUI extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         if (contador%2==0){
             jButton6.setText("X");
+            tablero.tablero[0][0]=5;
         }else{
-            jButton6.setText("0");            
+            jButton6.setText("0");  
+            tablero.tablero[0][0]=30;             
         }
         contador++;        // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        if (contador%2==0){
+            jButton7.setText("X");
+            tablero.tablero[0][0]=5;
+        }else{
+            jButton7.setText("0"); 
+            tablero.tablero[0][0]=30;              
+        }
+        contador++;        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        if (contador%2==0){
+            jButton8.setText("X");
+            tablero.tablero[0][0]=5;
+        }else{
+            jButton8.setText("0");  
+            tablero.tablero[0][0]=30;             
+        }
+        contador++;        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        if (contador%2==0){
+            jButton9.setText("X");
+            tablero.tablero[0][0]=5;
+        }else{
+            jButton9.setText("0");    
+            tablero.tablero[0][0]=30;           
+        }
+        contador++;        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        jButton1.setText("      "); 
+        jButton2.setText("      "); 
+        jButton3.setText("      "); 
+        jButton4.setText("      "); 
+        jButton5.setText("      "); 
+        jButton6.setText("      "); 
+        jButton7.setText("      "); 
+        jButton8.setText("      "); 
+        jButton9.setText("      "); 
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
 
     /**
      * @param args the command line arguments
