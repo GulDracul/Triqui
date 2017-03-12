@@ -5,7 +5,7 @@ public class GUI extends javax.swing.JFrame {
         initComponents();
     }
     Tablero tablero=new Tablero();
-    int contador=0,cont1=0,cont2=0,cont3=0,cont4=0,cont5=0,cont6=0,cont7=0,cont8=0,cont9=0,jug1=0,jug2=0,empate=0;
+    int contador=0,cont1=0,cont2=0,cont3=0,cont4=0,cont5=0,cont6=0,cont7=0,cont8=0,cont9=0;
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -30,8 +30,6 @@ public class GUI extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabelJug1 = new javax.swing.JLabel();
         jLabelJug2 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabelEmpate = new javax.swing.JLabel();
         jButton11 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -114,10 +112,6 @@ public class GUI extends javax.swing.JFrame {
 
         jLabelJug2.setText("0");
 
-        jLabel5.setText("Empate");
-
-        jLabelEmpate.setText("0");
-
         jButton11.setText("Reiniciar");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,14 +148,10 @@ public class GUI extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
-                                .addGap(63, 63, 63))
+                                .addGap(161, 161, 161))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jLabelJug1)
-                                .addGap(102, 102, 102)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabelEmpate))
-                        .addGap(62, 62, 62)
+                                .addGap(200, 200, 200)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelJug2)
                             .addComponent(jLabel2)))
@@ -196,13 +186,11 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel5))
+                    .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelJug1)
-                    .addComponent(jLabelJug2)
-                    .addComponent(jLabelEmpate))
+                    .addComponent(jLabelJug2))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
@@ -219,7 +207,7 @@ public class GUI extends javax.swing.JFrame {
                 tablero.tablero[0][0]=30;          
             }
             contador++;
-            tablero.calcular(jug1,jug2,empate);
+            tablero.calcular();
             cont1++;
             imprimirPuntaje();
         }
@@ -235,7 +223,7 @@ public class GUI extends javax.swing.JFrame {
                 tablero.tablero[1][0]=30;               
             }
             contador++;
-            tablero.calcular(jug1,jug2,empate);
+            tablero.calcular();
             cont2++; 
             imprimirPuntaje();
         }
@@ -251,7 +239,7 @@ public class GUI extends javax.swing.JFrame {
                 tablero.tablero[2][0]=30;               
             }
             contador++; 
-            tablero.calcular(jug1,jug2,empate);
+            tablero.calcular();
             cont3++;
             imprimirPuntaje();
         }
@@ -267,7 +255,7 @@ public class GUI extends javax.swing.JFrame {
                 tablero.tablero[0][1]=30;              
             }
             contador++;
-            tablero.calcular(jug1,jug2,empate);
+            tablero.calcular();
             cont4++;     
             imprimirPuntaje();
         }
@@ -283,7 +271,7 @@ public class GUI extends javax.swing.JFrame {
                 tablero.tablero[1][1]=30;            
             }
             contador++; 
-            tablero.calcular(jug1,jug2,empate);            
+            tablero.calcular();            
             cont5++;
             imprimirPuntaje();
         }
@@ -299,7 +287,7 @@ public class GUI extends javax.swing.JFrame {
                 tablero.tablero[2][1]=30;             
             }
             contador++;   
-            tablero.calcular(jug1,jug2,empate);
+            tablero.calcular();
             cont6++;
             imprimirPuntaje();
         }
@@ -315,7 +303,7 @@ public class GUI extends javax.swing.JFrame {
                 tablero.tablero[0][2]=30;              
             }
             contador++;   
-            tablero.calcular(jug1,jug2,empate);
+            tablero.calcular();
             cont7++;
             imprimirPuntaje();
         }
@@ -331,7 +319,7 @@ public class GUI extends javax.swing.JFrame {
                 tablero.tablero[1][2]=30;             
             }
             contador++;   
-            tablero.calcular(jug1,jug2,empate);
+            tablero.calcular();
             cont8++;
             imprimirPuntaje();
         }
@@ -347,7 +335,7 @@ public class GUI extends javax.swing.JFrame {
                 tablero.tablero[2][2]=30;           
             }
             contador++;  
-            tablero.calcular(jug1,jug2,empate);
+            tablero.calcular();
             cont9++;
             imprimirPuntaje();
         }
@@ -365,7 +353,7 @@ public class GUI extends javax.swing.JFrame {
         jButton9.setText("      "); 
         tablero.llenarTablero();
         contador=0;
-        cont1=0;cont2=0;cont3=0;cont4=0;cont5=0;cont6=0;cont7=0;cont8=0;cont1=9;
+        cont1=0;cont2=0;cont3=0;cont4=0;cont5=0;cont6=0;cont7=0;cont8=0;cont9=0;
         imprimirPuntaje();
     }//GEN-LAST:event_jButton10ActionPerformed
 
@@ -381,8 +369,10 @@ public class GUI extends javax.swing.JFrame {
         jButton9.setText("      "); 
         tablero.llenarTablero();
         contador=0;
-        cont1=0;cont2=0;cont3=0;cont4=0;cont5=0;cont6=0;cont7=0;cont8=0;cont1=9;
-        jug1=0;jug2=0;empate=0;
+        cont1=0;cont2=0;cont3=0;cont4=0;cont5=0;cont6=0;cont7=0;cont8=0;cont9=0;
+        tablero.setJug1(0);
+        tablero.setJug2(0);
+        tablero.setEmpate(0);
         imprimirPuntaje();
     }//GEN-LAST:event_jButton11ActionPerformed
 
@@ -435,15 +425,12 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabelEmpate;
     private javax.swing.JLabel jLabelJug1;
     private javax.swing.JLabel jLabelJug2;
     // End of variables declaration//GEN-END:variables
 
     private void imprimirPuntaje() {
-        jLabelJug1.setText(""+jug1);
-        jLabelJug2.setText(""+jug2);
-        jLabelEmpate.setText(""+empate);
+        jLabelJug1.setText(""+tablero.getJug1());
+        jLabelJug2.setText(""+tablero.getJug2());
     }
 }
